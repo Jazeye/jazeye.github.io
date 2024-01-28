@@ -3,6 +3,7 @@ const customIconContainer = document.getElementById('customIconContainer');
 const offIcon = document.getElementById('offIcon');
 const onIcon = document.getElementById('onIcon');
 
+
 toggleNine.addEventListener('change', function () {
     if (toggleNine.checked) {
         // Checkbox is checked, show the on state icon
@@ -16,6 +17,7 @@ toggleNine.addEventListener('change', function () {
         offIcon.classList.remove('hidden');
     }
 });
+
 
 // scroll down button
 document.getElementById('scrollButton').addEventListener('click', function() {
