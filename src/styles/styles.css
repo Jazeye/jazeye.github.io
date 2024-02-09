@@ -18,12 +18,14 @@
 }
 
 :root {
-  --primary-color: linear-gradient(to top,
-      #43aab0,
-      #02a8cd,
-      #2787c1,
-      #4f64a6,
-      #653e7d);
+  --primary-color: linear-gradient(
+    to top,
+    #43aab0,
+    #02a8cd,
+    #2787c1,
+    #4f64a6,
+    #653e7d
+  );
   --second-bg-color: #02a8cd;
   --third-bg-color: #653e7d1c;
   --active-bg-color: #000000a2;
@@ -62,8 +64,8 @@ span {
   z-index: 100;
   flex-wrap: nowrap;
 }
-.header .sticky{
-  border-bottom: .1rem solid rgba(0, 0, 0, .2);
+.header .sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -104,7 +106,6 @@ span {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
-  
 }
 
 .home-content h2 {
@@ -250,9 +251,9 @@ span {
   justify-content: center;
   gap: 5px;
   padding: 10%;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-.skill-child:nth-child(2) .skill-sub-child:hover{
+.skill-child:nth-child(2) .skill-sub-child:hover {
   box-shadow: 0 0 1rem;
 }
 .skill-child:nth-child(2) .skill-sub-child img {
@@ -372,7 +373,7 @@ span {
 }
 
 /* footer session */
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -380,62 +381,125 @@ span {
   padding: 2rem 9%;
   background: var(--tranceparent-color);
 }
-.footer-text p{
+.footer-text p {
   font-size: 15px;
   font-weight: 500;
 }
-.footer-iconTop a{
+.footer-iconTop a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: .8rem;
+  padding: 0.8rem;
   border: 1px solid #fff;
   background-color: var(--third-bg-color);
-  border-radius: .8rem;
-
+  border-radius: 0.8rem;
 }
-.footer-iconTop a :hover{
+.footer-iconTop a :hover {
   background-color: var(--main-color);
 }
 
 /* responsive */
-@media (max-width: 1200px){
-  html{
+@media (max-width: 1200px) {
+  html {
     font-size: 55%;
   }
 }
-@media (max-width: 991px){
-  .header{
+@media (max-width: 991px) {
+  .header {
     padding: 2rem 3%;
   }
-  section{
+  section {
     padding: 10rem 3% 2rem;
   }
-  .footer{
+  .footer {
     padding: 2rem 3%;
   }
 }
-@media (max-width: 768px){
- #menu-icon{
-  display: block;
- }
- .navbar{
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 1rem 3%;
-  width: 100%;
-  background: var(--third-bg-color);
-  border-top: .1rem solid rgba(0, 0, 0, .2);
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-  display: none;
- }
- .navbar.active{
-  display: block;
- }
- .navbar a{
-  display: block;
-  font-size: 2rem;
-  margin: 3rem 0;
- }
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 3%;
+    width: 100%;
+    background: var(--third-bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+  .home-content h1 {
+    font-size: 3rem;
+    margin-top: 4rem;
+  }
+  .container img {
+    width: 70vw;
+    margin-top: 1rem;
+  }
+  /* about responsive*/
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about-img img {
+    width: 70vw;
+    margin-top: 1rem;
+  }
+  /* skills responsive */
+  .skill-container {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+
+  .skill-child {
+    width: 100%;
+  }
+  .skill-child:nth-child(1) img {
+    width: 70vw;
+    margin-bottom: 2rem;
+  }
+
+  .skill-child:nth-child(2) {
+    grid-template-columns: 1fr;
+  }
+  .skill-child:nth-child(2) .skill-sub-child {
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .skill-child:nth-child(1) h5 {
+    font-size: 3.5rem;
+  }
+  /* //login responsive*/
+  .login-cont {
+    flex-direction: column;
+  }
+
+  .login-cont .login-box:nth-child(1),
+  .login-cont .login-box:nth-child(2) {
+    width: 100%;
+  }
+  .login-box:nth-child(2) form input,
+  .login-box:nth-child(2) form textarea {
+    padding: 16px 47px;
+    font-size: 5px;
+    margin: 5px;
+  }
 }
