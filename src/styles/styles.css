@@ -25,7 +25,8 @@
       #4f64a6,
       #653e7d);
   --second-bg-color: #02a8cd;
-  --third-bg-color: #000000;
+  --third-bg-color: #653e7d1c;
+  --active-bg-color: #000000a2;
   --txt-color: #ffffff;
   --main-color: #653e7d;
   --tranceparent-color: #ffffff00;
@@ -55,11 +56,14 @@ span {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--tranceparent-color);
+  background: var(--third-bg-color);
   display: flex;
   justify-content: space-between;
   z-index: 100;
   flex-wrap: nowrap;
+}
+.header .sticky{
+  border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
 .logo {
@@ -77,7 +81,7 @@ span {
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--third-bg-color);
+  color: var(--active-bg-color);
 }
 
 #menu-icon {
@@ -387,7 +391,7 @@ span {
   align-items: center;
   padding: .8rem;
   border: 1px solid #fff;
-  background-color: var(--tranceparent-color);
+  background-color: var(--third-bg-color);
   border-radius: .8rem;
 
 }
