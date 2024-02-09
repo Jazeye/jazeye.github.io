@@ -1,28 +1,23 @@
-const toggleNine = document.getElementById('toggleNine');
-const customIconContainer = document.getElementById('customIconContainer');
-const offIcon = document.getElementById('offIcon');
-const onIcon = document.getElementById('onIcon');
+//active scroll link
+let sections = document.querySelectorAll("section");
+let navlinks = document.querySelectorAll("header nav a");
 
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
 
-toggleNine.addEventListener('change', function () {
-    if (toggleNine.checked) {
-        // Checkbox is checked, show the on state icon
-        customIconContainer.classList.add('translate-x-full');
-        offIcon.classList.add('hidden');
-        onIcon.classList.remove('hidden');
-    } else {
-        // Checkbox is unchecked, show the off state icon
-        customIconContainer.classList.remove('translate-x-full');
-        onIcon.classList.add('hidden');
-        offIcon.classList.remove('hidden');
+    if (top >= offset && top < offset + height) {
+      navlinks.forEach((links) => {
+        links.classList.remove("active");
+      });
+
+      let activeNavlink = document.querySelector("header nav a[href='#" + id + "']");
+      if (activeNavlink) {
+        activeNavlink.classList.add("active");
+      }
     }
-});
-
-
-// scroll down button
-document.getElementById('scrollButton').addEventListener('click', function() {
-    // Scroll to a specific section or element on your page
-    document.getElementById('targetSection').scrollIntoView({
-        behavior: 'smooth'
-    });
-});
+  });
+};

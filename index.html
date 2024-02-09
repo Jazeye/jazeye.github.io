@@ -2,79 +2,186 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- tailwindcss -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css link -->
+  <link rel="stylesheet" href="./src/styles/styles.css">
   <title>Portfolio</title>
 </head>
 
-<body
-  class="sm:w-full md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1440px] h-screen relative bg-gradient-to-b from-purple-900 via-cyan-700 to-teal-400">
-  <!-- navbar -->
-  <nav class="flex p-4">
-    <div>
-      <a class="pt-2" href="#">
-        <img src="./src/icons/nameicon.png" alt="logo" />
-      </a>
-    </div>
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">JASEEL P</a>
 
-    <div class="flex flex-grow justify-end space-x-4 sm:space-x-7 text-sm sm:text-lg lg:space-x-10">
-      <a href="#" class="text-white">Home</a>
-      <a href="#" class="text-white">About</a>
-      <a href="#" class="text-white">Skills</a>
-      <a href="#" class="text-white">Connect</a>
-    </div>
+    <img src="./src/icons/menu-icon.svg" alt="menu error" id="menu-icon">
 
-    <label for="toggleNine" class="flex items-center cursor-pointer select-none text-dark dark:text-white pl-5">
-      <div class="relative">
-        <input type="checkbox" id="toggleNine" class="peer sr-only" />
-        <div class="block h-8 rounded-full w-14 bg-gray-3 dark:bg-dark-2 border border-white">
-          <!-- Add border class for white stroke -->
-          <!-- Use transition classes for a smooth sliding effect -->
-          <div
-            class="absolute flex items-center justify-center w-6 h-6 transition-all duration-300 bg-white rounded-full dot left-1 top-1 dark:bg-dark-3"
-            id="customIconContainer">
-            <!-- Off state image -->
-            <img src="./src/icons/devicon.png" alt="Off Icon"
-              class="w-4 h-4 rounded-full transition-opacity duration-300" id="offIcon" />
-            <!-- On state image (initially hidden) -->
-            <img src="./src/icons/hackericon.png" alt="On Icon"
-              class="w-4 h-4 rounded-full transition-opacity duration-300 hidden" id="onIcon" />
-          </div>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#connect">Connect</a>
+      
+    </div>
+    
+    </nav>
+    
+  </header>
+
+  <!-- home section design -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hey all</h1>
+      <h2>Let's embark on a digital journey together</h2>
+      <h1>Welcome to Jaseel P's portfolio</h1>
+    </div>
+    <!-- home base image container -->
+    <div class="container">
+      <img src="./src/Images/bgshape.png" alt="error">
+      <img src="./src/Images/man1.png" alt="error" class="centered-image">
+    </div>
+    <div class="fixed-button-container">
+      <a href="#about" id="scrollButton">Scroll Down</a>
+    </div>
+  </section>
+
+  <!-- about section design -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="./src/Images/bgshape.png" alt="error">
+      <img src="./src/Images/man1.png" alt="error" class="centered-about-image">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <p>I am currently a student at SAFI Institute of Advanced Study where I am earning my Bachelor's degree in
+        Computer Application. As a self taught web developer, I am proficient in HTML, CSS and JavaScript. I am
+        passionate about web development and enjoy working on projects that challenge my coding skills. I am always
+        eager to learn new technologies and improve my existing skills.</p>
+    </div>
+  </section>
+  <!-- skill section -->
+  <section class="skills" id="skills">
+    <div class="skill-container">
+      <div class="skill-child">
+        <h5>My Skills</h5>
+        <h1>Let's Explore Popular Skills & Experience </h1>
+        <img src="./src/Images/devimg.png" alt="">
+      </div>
+
+      <div class="skill-child">
+        <div class="skill-sub-child">
+          <img src="./src/icons/python.png" alt="">
+          <h1>Figma</h1>
+          <p>95%</p>
+        </div>
+        <div class="skill-sub-child">
+          <img src="./src/icons/python.png" alt="">
+          <h1>Figma</h1>
+          <p>95%</p>
+        </div>
+        <div class="skill-sub-child">
+          <img src="./src/icons/python.png" alt="">
+          <h1>Figma</h1>
+          <p>95%</p>
+        </div>
+        <div class="skill-sub-child">
+          <img src="./src/icons/python.png" alt="">
+          <h1>Figma</h1>
+          <p>95%</p>
+        </div>
+        <div class="skill-sub-child">
+          <img src="./src/icons/python.png" alt="">
+          <h1>Figma</h1>
+          <p>95%</p>
+        </div>
+        <div class="skill-sub-child">
+          <img src="./src/icons/python.png" alt="">
+          <h1>Figma</h1>
+          <p>95%</p>
         </div>
       </div>
-    </label>
-  </nav>
-  <div class="flex justify-between pl-24">
-    <!-- Left side with headings -->
-    <div class="text-left pt-32">
-      <h1 class="text-white text-[40px] font-medium font-['Source Serif Pro'] capitalize leading-loose">
-        hey all
-      </h1>
-      <h2 class="text-white text-[40px] font-thin font-['Source Serif Pro'] capitalize leading-loose">
-        Let's embark on a digital journey together
-      </h2>
-      <h2 class="text-white text-[45px] font-light font-['Source Serif Pro'] capitalize leading-loose">
-        Welcome to Jaseel P's portfolio
-      </h2>
     </div>
-  </div>
+  </section>
 
-  <!-- Right side with centered image -->
-  <div class="flex items-end justify-end relative">
-    <!-- Adjust the size as needed -->
-    <img src="./src/Images/bgshape.png" alt="error" class="max-w-sm absolute top-1 transform -translate-y-1/2" />
-    <img src="./src/Images/man1.png" alt="error"
-      class="max-h-80 pr-10 pb-7 absolute top-0 transform -translate-y-1/2" />
+  <!-- Login Section  -->
+  <section class="login" id="connect">
+    <div class="login-cont">
+      <div class="login-box">
+        <h1>get in touch</h1>
+        <h1>let's talk for your next projects</h1>
+        <p>Thanks For Stopping By! Whether
+          You Have Questions, Comments, Or
+          Just Want To Say Hello, I'm Always
+          Happy To Connect With New People.
+          Feel Free To Reach Out And Start
+          The Conversation!" </p>
+        <div class="socialLinks">
+           <h1>Follow me:</h1>
+           <div class="links">
+              <a href="">
+                <img src="./src/icons/instagram.svg" alt="">
+              </a>
+              <a href="">
+                <img src="./src/icons/github.svg" alt="">
+              </a>
+              <a href="">
+                <img src="./src/icons/linkedin.svg" alt="">
+              </a>
+              <a href="">
+                <img src="./src/icons/twitterx.svg" alt="">
+              </a>
+           </div> 
+        </div>
+        <div class="contact">
+          <a href="">
+            <img src="./src/icons/location.svg" alt="">
+            Calicut, Kerala, India
+          </a>
+          <a href="mailto:jaseelp394@gmail.com">
+            <img src="./src/icons/mail.svg" alt="">
+            jaseelp394@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="login-box">
+          <form action="">
+            <div class="sec-1">
+              <div >
+                <label for="">Full Name</label>
+                <input type="text" name="" id="">
+              </div>
+              <div >
+                <label for="">Email</label>
+                <input type="email" name="" id="">
+              </div>
+            </div>
+            <div class="sec-2">
+              <div >
+                <label for="">Phone Number</label>
+                <input type="text" name="" id="">
+              </div>
+              <div >
+                <label for="">Subject</label>
+                <input type="email" name="" id="">
+              </div>
+            </div>
+            <label for="">Message</label>
+            <textarea name="" id="" cols="20" rows="5"></textarea>
+            <input type="submit" value="submit">
+          </form>
+      </div>
+    </div>
+  </section>
+<!-- footer session -->
+<footer class="footer">
+  <div class="footer-text">
+    <p>Copyright &copy; 2024 By JASEEL | ALL Rights Reserved.</p>
   </div>
-
-  <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
-    <button id="scrollButton" class="border border-white text-white font-semibold px-4 py-2 rounded-full">
-      Scroll Down
-    </button>
+  <div class="footer-iconTop">
+    <a href="#home"><img src="./src/icons/arrow-up.png" alt="arrow-up error"></a>
   </div>
-
+</footer>
+  <!-- custom js -->
   <script src="./src/scripts/main.js"></script>
 </body>
 
