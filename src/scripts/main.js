@@ -58,7 +58,12 @@ ScrollReveal({
   duration: 2000,
   delay: 200,
 });
-ScrollReveal().reveal(".home-content, .heading, .skills-heading,.login-heading", { origin: "top" });
-ScrollReveal().reveal(".container img,.about-img,.skill-child:nth-child(2)", { origin: "bottom" });
+ScrollReveal().reveal(
+  ".home-content, .heading, .skills-heading,.login-heading",
+  { origin: "top" }
+);
+ScrollReveal().reveal(".container img,.about-img,.skill-child:nth-child(2)", {
+  origin: "bottom",
+});
 ScrollReveal().reveal(".home-content h2", { origin: "left" });
 ScrollReveal().reveal(".home-content h3", { origin: "right" });
