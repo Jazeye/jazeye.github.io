@@ -114,6 +114,24 @@ span {
   line-height: 2;
   margin-bottom: 25px;
 }
+/* socialLinks-mainpage */
+.socialLinks-mainpage h1 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 10px 0 20px 0;
+}
+
+.socialLinks-mainpage .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+  gap: 1rem;
+}
+
+.socialLinks-mainpage .links a img {
+  width: 40px;
+}
 
 /* bg shape and image */
 .container {
@@ -398,7 +416,7 @@ span {
   background-color: var(--main-color);
 }
 
-/* responsive */
+/* =====================responsive =======================*/
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -409,7 +427,7 @@ span {
     padding: 2rem 3%;
   }
   section {
-    padding: 10rem 3% 2rem;
+    padding: 10rem 2% 2rem;
   }
   .footer {
     padding: 2rem 3%;
@@ -440,53 +458,61 @@ span {
   }
   .home {
     flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .home-content{
+    margin-top: 3rem;
   }
   .home-content h3 {
     font-size: 2.6rem;
   }
   .home-content h1 {
     font-size: 3rem;
-    margin-top: 4rem;
+  }
+  .socialLinks-mainpage  {
+    display: none;
   }
   .container img {
     width: 70vw;
-    margin-top: 1rem;
   }
+
   /* about responsive*/
   .about {
     flex-direction: column-reverse;
+  }
+  .about-content{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .about-img img {
     width: 70vw;
     margin-top: 1rem;
   }
+
   /* skills responsive */
+
   .skill-container {
     flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-    max-height: 60vh;
   }
-
   .skill-child {
     width: 100%;
+    margin-bottom: 2rem;
+  }
+  .skill-child:nth-child(1) h1{
+    text-align: center;
+  }
+  .skill-child:nth-child(1) h5{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
   }
   .skill-child:nth-child(1) img {
-    width: 70vw;
-    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .skill-child:nth-child(2) {
-    grid-template-columns: 1fr;
-  }
-  .skill-child:nth-child(2) .skill-sub-child {
-    flex-direction: row;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  .skill-child:nth-child(1) h5 {
-    font-size: 3.5rem;
-  }
   /* //login responsive*/
   .login-cont {
     flex-direction: column;
@@ -502,4 +528,6 @@ span {
     font-size: 5px;
     margin: 5px;
   }
+}
+@media (max-width: 617px) {
 }
