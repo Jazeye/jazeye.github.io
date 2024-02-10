@@ -60,5 +60,5 @@ ScrollReveal({
 });
 ScrollReveal().reveal(".home-content, .heading, .skills-heading,.login-heading", { origin: "top" });
 ScrollReveal().reveal(".container img,.about-img,.skill-child:nth-child(2)", { origin: "bottom" });
-ScrollReveal().reveal(".", { origin: "left" });
-ScrollReveal().reveal(".", { origin: "left" });
+ScrollReveal().reveal(".home-content h2", { origin: "left" });
+ScrollReveal().reveal(".home-content h3", { origin: "right" });

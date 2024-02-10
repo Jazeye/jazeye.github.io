@@ -102,16 +102,22 @@ span {
 }
 
 .home-content h1 {
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
 }
 
 .home-content h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
-  line-height: 2;
+  line-height: 1;
   margin-bottom: 25px;
 }
 /* socialLinks-mainpage */
@@ -144,13 +150,25 @@ span {
 
 .container img {
   width: 28vw;
+  animation: floatimage 4s ease-in-out infinite;
+}
+@keyframes floatimage {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(2.4rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 .centered-image {
   max-width: 60%;
   position: absolute;
-  top: 45%;
-  left: 50%;
+  /* top: 45%;
+  left: 50%; */
   transform: translate(-50%, -50%);
 }
 
