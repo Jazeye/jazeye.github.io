@@ -505,7 +505,7 @@ span {
   .skill-child:nth-child(1) h5{
     text-align: center;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 600;
   }
   .skill-child:nth-child(1) img {
     display: block;
