@@ -501,10 +501,11 @@ span {
   }
   .skill-child:nth-child(1) h1{
     text-align: center;
+    font-size: 25px;
   }
   .skill-child:nth-child(1) h5{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
   }
   .skill-child:nth-child(1) img {
