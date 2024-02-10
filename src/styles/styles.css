@@ -457,6 +457,9 @@ span {
     font-size: 15px;
     margin: 5px;
   }
+  .skill-child:nth-child(2) .skill-sub-child {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 768px) {
   #menu-icon {
