@@ -30,7 +30,7 @@
   --third-bg-color: #653e7d1c;
   --active-bg-color: #000000a2;
   --txt-color: #ffffff;
-  --main-color: #653e7d;
+  --main-color: #653e7deb;
   --tranceparent-color: #ffffff00;
 }
 
@@ -472,7 +472,7 @@ span {
     left: 0;
     padding: 1rem 3%;
     width: 100%;
-    background: var(--third-bg-color);
+    background: var(--main-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
