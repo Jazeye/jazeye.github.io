@@ -48,7 +48,7 @@ section {
 }
 
 span {
-  color: var(--second-bg-color);
+  color: var(--active-bg-color);
   font-weight: 600;
 }
 
@@ -242,7 +242,7 @@ span {
 }
 
 .skill-child:nth-child(1) h5 {
-  font-size: 20px;
+  font-size: 35px;
 }
 
 .skill-child:nth-child(1) h1 {
@@ -461,7 +461,7 @@ span {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  .home-content{
+  .home-content {
     margin-top: 3rem;
   }
   .home-content h3 {
@@ -470,7 +470,7 @@ span {
   .home-content h1 {
     font-size: 3rem;
   }
-  .socialLinks-mainpage  {
+  .socialLinks-mainpage {
     display: none;
   }
   .container img {
@@ -481,7 +481,7 @@ span {
   .about {
     flex-direction: column-reverse;
   }
-  .about-content{
+  .about-content {
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -499,11 +499,11 @@ span {
     width: 100%;
     margin-bottom: 2rem;
   }
-  .skill-child:nth-child(1) h1{
+  .skill-child:nth-child(1) h1 {
     text-align: center;
     font-size: 25px;
   }
-  .skill-child:nth-child(1) h5{
+  .skill-child:nth-child(1) h5 {
     text-align: center;
     font-size: 3rem;
     font-weight: 600;
@@ -531,4 +531,24 @@ span {
   }
 }
 @media (max-width: 617px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .container img {
+    width: 90vw;
+}
+}
+@media (max-width: 365px) {
+.footer{
+  flex-direction: column-reverse;
+}
+.footer p{
+  text-align: center;
+  margin-top: 2rem;
+}
 }

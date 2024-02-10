@@ -45,9 +45,20 @@ window.onscroll = () => {
   //========remove toggle icon when navbar click=========//
   menuIcon.classList.remove("active");
   navbar.classList.remove("active");
-     if (menuIcon.classList.contains("active")) {
-        menuIcon.src = "./src/icons/x-arrow.png";
-     } else {
-        menuIcon.src = "./src/icons/menu-icon.svg";
-     }
+  if (menuIcon.classList.contains("active")) {
+    menuIcon.src = "./src/icons/x-arrow.png";
+  } else {
+    menuIcon.src = "./src/icons/menu-icon.svg";
+  }
 };
+//========scroll reveal animation=========//
+ScrollReveal({
+  reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
+});
+ScrollReveal().reveal(".home-content, .heading, .skills-heading,.login-heading", { origin: "top" });
+ScrollReveal().reveal(".container img,.about-img,.skill-child:nth-child(2)", { origin: "bottom" });
+ScrollReveal().reveal(".", { origin: "left" });
+ScrollReveal().reveal(".", { origin: "left" });
