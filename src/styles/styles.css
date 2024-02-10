@@ -153,13 +153,13 @@ span {
   animation: floatimage 4s ease-in-out infinite;
 }
 @keyframes floatimage {
-  0%{
+  0% {
     transform: translateY(0);
   }
-  50%{
+  50% {
     transform: translateY(2.4rem);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
@@ -450,6 +450,13 @@ span {
   .footer {
     padding: 2rem 3%;
   }
+  .login-box:nth-child(2) form input,
+  .login-box:nth-child(2) form textarea {
+    width: 100%;
+    padding: 16px 47px;
+    font-size: 15px;
+    margin: 5px;
+  }
 }
 @media (max-width: 768px) {
   #menu-icon {
@@ -531,6 +538,9 @@ span {
     margin-left: auto;
     margin-right: auto;
   }
+  .skill-child:nth-child(2) .skill-sub-child {
+    margin-bottom: 3rem;
+  }
 
   /* //login responsive*/
   .login-cont {
@@ -543,8 +553,9 @@ span {
   }
   .login-box:nth-child(2) form input,
   .login-box:nth-child(2) form textarea {
+    width: 100%;
     padding: 16px 47px;
-    font-size: 5px;
+    font-size: 15px;
     margin: 5px;
   }
 }
@@ -559,14 +570,21 @@ span {
   }
   .container img {
     width: 90vw;
-}
+  }
+  .skill-child:nth-child(2) .skill-sub-child {
+    padding: 5px;
+    margin-bottom: 3rem;
+  }
+  .skill-child:nth-child(2) .skill-sub-child p {
+    padding: 3px 15px;
+  }
 }
 @media (max-width: 365px) {
-.footer{
-  flex-direction: column-reverse;
-}
-.footer p{
-  text-align: center;
-  margin-top: 2rem;
-}
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
