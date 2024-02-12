@@ -440,6 +440,9 @@ span {
   html {
     font-size: 55%;
   }
+  .login-box:nth-child(2) form input, .login-box:nth-child(2) form textarea {
+    font-size: 14px;
+  }
 }
 @media (max-width: 991px) {
   .header {
