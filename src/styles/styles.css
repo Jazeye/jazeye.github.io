@@ -464,6 +464,15 @@ span {
   .skill-child:nth-child(2) .skill-sub-child {
     margin-bottom: 3rem;
   }
+  .sec-1,
+.sec-2 {
+  flex-direction: column;
+}
+.login-box{
+  align-items: center;
+  justify-content: center;
+}
+  
 }
 @media (max-width: 768px) {
   #menu-icon {
@@ -565,11 +574,27 @@ span {
     font-size: 15px;
     margin: 5px;
   }
+  .sec-1,
+.sec-2 {
+  flex-direction: column;
+}
+.login-box{
+  align-items: center;
+  justify-content: center;
+}
 }
 @media (max-width: 617px) {
   html {
     font-size: 52%;
   }
+  .sec-1,
+.sec-2 {
+  flex-direction: column;
+}
+.login-box{
+  align-items: center;
+  justify-content: center;
+}
 }
 @media (max-width: 450px) {
   html {
