@@ -468,11 +468,6 @@ span {
 .sec-2 {
   flex-direction: column;
 }
-.login-box{
-  align-items: center;
-  justify-content: center;
-}
-  
 }
 @media (max-width: 768px) {
   #menu-icon {
@@ -578,10 +573,6 @@ span {
 .sec-2 {
   flex-direction: column;
 }
-.login-box{
-  align-items: center;
-  justify-content: center;
-}
 }
 @media (max-width: 617px) {
   html {
@@ -591,10 +582,7 @@ span {
 .sec-2 {
   flex-direction: column;
 }
-.login-box{
-  align-items: center;
-  justify-content: center;
-}
+
 }
 @media (max-width: 450px) {
   html {
