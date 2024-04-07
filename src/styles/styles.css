@@ -139,7 +139,22 @@ span {
 .socialLinks-mainpage .links a img {
   width: 40px;
 }
-
+.btn{
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  margin-top: 20px;
+  background: #4f64a6;
+  /* border: 1px solid rgb(255, 255, 255); */
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: var(--txt-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+.btn:hover{
+  box-shadow: 0 0 1rem var(--second-bg-color);
+}
 /* bg shape and image */
 .container {
   display: flex;

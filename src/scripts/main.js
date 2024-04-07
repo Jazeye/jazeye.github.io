@@ -67,3 +67,20 @@ ScrollReveal().reveal(".container img,.about-img,.skill-child:nth-child(2)", {
 });
 ScrollReveal().reveal(".home-content h2", { origin: "left" });
 ScrollReveal().reveal(".home-content h3", { origin: "right" });
+
+// button download
+document.getElementById('downloadButton').addEventListener('click', function() {
+
+  var driveFileLink = 'https://drive.google.com/uc?export=download&id=1bzO_xAcnJpus2Tuiqz9MF0pj4Ocm4WwQ';
+  
+  var link = document.createElement('a');
+
+  link.href = driveFileLink;
+
+  link.download = 'cv.pdf'; 
+
+  document.body.appendChild(link);
+  link.click();
+
+  document.body.removeChild(link);
+});
