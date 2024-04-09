@@ -69,45 +69,25 @@ ScrollReveal().reveal(".home-content h2", { origin: "left" });
 ScrollReveal().reveal(".home-content h3", { origin: "right" });
 
 // button download
-// document.getElementById('downloadButton').addEventListener('click', function() {
-
-//   var driveFileLink = 'https://drive.google.com/uc?export=download&id=1bzO_xAcnJpus2Tuiqz9MF0pj4Ocm4WwQ';
-  
-  
-//   var link = document.createElement('a');
-
-//   link.href = driveFileLink;
-
-//   link.download = 'cv.pdf'; 
-
-//   document.body.appendChild(link);
-//   link.click();
-
-//   document.body.removeChild(link);
-// });
-
-// Function to handle the download
-function downloadFile(driveFileLink, fileName) {
-  var link = document.createElement('a');
-  link.href = driveFileLink;
-  link.download = fileName; 
-
-  document.body.appendChild(link);
-  link.click();
-
-  document.body.removeChild(link);
-}
-
-// Click event for the first button
-document.getElementById('downloadButtondev').addEventListener('click', function() {
+function downloadDevCV() {
   var driveFileLink = 'https://drive.google.com/uc?export=download&id=1A2PicoWAx1AOdk5vBc7lz1xPCY1gA2Aj';
   var fileName = 'dev_cv.pdf';
-  downloadFile(driveFileLink, fileName);
-});
 
-// Click event for the second button
-document.getElementById('downloadButtonsec').addEventListener('click', function() {
+  var link = document.createElement('a');
+  link.href = driveFileLink;
+  link.download = fileName;
+
+  link.click();
+}
+
+function downloadSecCV() {
   var driveFileLink = 'https://drive.google.com/uc?export=download&id=1lWrb5ZeEnrgWg0F24EiCawgnnqDb7ksO';
   var fileName = 'sec_cv.pdf';
-  downloadFile(driveFileLink, fileName);
-});
+
+  var link = document.createElement('a');
+  link.href = driveFileLink;
+  link.download = fileName;
+
+  link.click();
+}
+
