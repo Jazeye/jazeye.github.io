@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+::-webkit-scrollbar {
+    background: var(--second-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 99px;
+}
+
+:root {
+    --primary-color: #111010;
+    --second-bg-color: #02a8cd;
+    --third-bg-color: #653e7d1c;
+    --active-bg-color: #0087fda2;
+    --txt-color: #ffffff;
+    --main-color: #000000eb;
+    --transparent-color: #ffffff00;
+}
+
+html, body {
+    background: var(--primary-color);
+    color: var(--txt-color);
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 1rem;
+    
+  }
+
+span {
+    color: var(--active-bg-color);
+    font-weight: 600;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--third-bg-color);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header.sticky {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--txt-color);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--txt-color);
+    margin-left: 4rem;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: var(--active-bg-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--txt-color);
+    display: none;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    padding-top: 20px; /* Optional: adjust this value to move it slightly lower from the top */
+}
+
+.home-content h1 {
+    font-size: 5.5rem;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 2.2rem;
+}
+/* scroll down btn */
+.fixed-button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+  }
+  
+  .fixed-button-container a {
+    font-size: 1.5rem;
+  }
+  
+  #scrollButton {
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 99px;
+    background-color: transparent;
+  }
+
+/* second section */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the repo card */
+    margin: 0 auto; /* Center the container itself */
+}
+
+.repo-card {
+    width: 100%; /* Fixed width for desktop */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    
+}
+
+.repo-card:hover {
+    transform: scale(1.02);
+}
+
+.repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo-header h3 {
+    font-size: 4.2em;
+    color: #0366d6;
+}
+
+.star-btn {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.star-btn:hover {
+    background-color: #e1e4e8;
+}
+
+.repo-description {
+    margin-top: 10px;
+    color: #586069;
+    font-size: 3.2em;
+}
+
+.repo-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: #586069;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.js {
+    background-color: #5af178;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.py {
+    background-color: #3572A5;
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.stars {
+    font-weight: bold;
+    color: #333;
+    font-size: 2.5em;
+}
+
+.repo-action {
+    margin-top: 15px;
+}
+
+.view-repo-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.view-repo-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 15px;
+}
+
+
+/* ===================== Responsive =======================*/
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1rem 3%;
+        width: 100%;
+        background: var(--main-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 617px) {
+    html {
+        font-size: 52%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container img {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 365px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
