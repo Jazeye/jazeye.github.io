@@ -5,39 +5,62 @@
     text-decoration: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Roboto", "Helvetica", sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 ::-webkit-scrollbar {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+    background: var(--accent-gradient);
     border-radius: 99px;
 }
 
 :root {
-    --primary-color: #111010;
-    --second-bg-color: #02a8cd;
-    --third-bg-color: #653e7d1c;
-    --active-bg-color: #0087fda2;
-    --txt-color: #ffffff;
-    --main-color: #000000eb;
-    --transparent-color: #ffffff00;
+    --bg-color: #0a0a0f;
+    --bg-color-alt: #12121a;
+    --primary-color: #00e5ff;
+    --secondary-color: #8b5cf6;
+    --accent-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --text-color: #e2e8f0;
+    --text-muted: #94a3b8;
+    --glass-bg: rgba(18, 18, 26, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    /* Legacy mapped variables */
+    --second-bg-color: var(--primary-color);
+    --third-bg-color: transparent;
+    --active-bg-color: var(--primary-color);
+    --txt-color: var(--text-color);
+    --main-color: var(--bg-color);
+    --transparent-color: transparent;
 }
 
 html, body {
-    background: var(--primary-color);
-    color: var(--txt-color);
+    background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(0, 229, 255, 0.1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.1) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: var(--text-color);
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
+.glass-header {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--glass-border) !important;
+}
+
 section {
     min-height: 100vh;
     padding: 10rem 9% 1rem;
-    
-  }
+}
 
 span {
     color: var(--active-bg-color);
@@ -132,12 +155,15 @@ span {
 
 /* Report Card Style */
 .report-card {
-    background-color: #2a2a2a;
-    border-radius: 8px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
     overflow: hidden;
     width: 100%;
     max-width: 400px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--glass-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -156,7 +182,7 @@ span {
 }
 
 .report-content p {
-    color: #ccc;
+    color: var(--text-muted);
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
@@ -175,7 +201,7 @@ span {
 /* Hover effects */
 .report-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 229, 255, 0.2), 0 0 15px rgba(139, 92, 246, 0.3);
 }
 
 /* New Report Button */
